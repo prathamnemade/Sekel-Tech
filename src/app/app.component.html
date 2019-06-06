@@ -1,11 +1,11 @@
 <div style="margin:0;">
     <div *ngFor="let item of commonService.jsonData" class="row panel">
-        <div class="row panel" style="width:100%">
+        <div class="row panel" (click)="subPanel()" id="{{item.id}}" style="width:100%">
             <div class='col-md-1'>
                 <img [src]="item.image">
             </div>
             <div class="col-md-10">{{item.name}}</div>
         </div>
-        <div [innerHTML]="item.subFolder|segregate :'html'" style="width: 100%;" (click)="subPanel()"></div>
+        <div *ngIf="item.open" [innerHTML]="item.subFolder|segregate :'html'" style="width: 100%;" (click)="subPanel()"></div>
     </div>
 </div>

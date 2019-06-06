@@ -5,3 +5,7 @@
 .row {
     margin: 0;
 }
+
+.panel:hover {
+    cursor: pointer;
+}

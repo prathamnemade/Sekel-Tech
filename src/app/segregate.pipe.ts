@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { DomSanitizer, SafeHtml, SafeStyle, SafeScript, SafeUrl, SafeResourceUrl } from '@angular/platform-browser';
 
 @Pipe({
-  name: 'segregate'
+  name: 'segregate',
+  pure: false
 })
 export class SegregatePipe implements PipeTransform {
   divToRender;
@@ -29,14 +30,14 @@ export class SegregatePipe implements PipeTransform {
           this.divToRender += this.formHTML(list[j], this.count);
           if (list[j].subFolder.length > 0) {
             this.count += 1;
-            sub(list[j].subFolder)
+            if(value[j].open)sub(list[j].subFolder)
           }
         }
       }
       if (value[i].subFolder.length > 0) {
         this.divToRender += this.formHTML(value[i], this.count)
         this.count += 1;
-        sub(value[i].subFolder)
+        if(value[i].open)sub(value[i].subFolder)
       } else {
         this.divToRender += this.formHTML(value[i], this.count)
       }

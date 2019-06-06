@@ -1,0 +1,134 @@
+[{
+        "type": "folder",
+        "name": "Folder 1",
+        "id": "1",
+        "image": "./img/openedFolder.svg",
+        "open": false,
+        "subFolder": [{
+                "type": "folder",
+                "name": "Folder 11",
+                "id": "11",
+                "image": "./img/openedFolder.svg",
+                "open": false,
+                "subFolder": []
+            },
+            {
+                "type": "folder",
+                "name": "Folder 12",
+                "id": "12",
+                "image": "./img/openedFolder.svg",
+                "open": false,
+                "subFolder": [{
+                    "type": "folder",
+                    "name": "Folder 121",
+                    "id": "121",
+                    "image": "./img/openedFolder.svg",
+                    "open": false,
+                    "subFolder": []
+                }, {
+                    "type": "folder",
+                    "name": "Folder 122",
+                    "id": "122",
+                    "image": "./img/openedFolder.svg",
+                    "open": false,
+                    "subFolder": []
+                }]
+            }
+        ]
+    },
+    {
+        "type": "folder",
+        "name": "Folder 2",
+        "id": "2",
+        "image": "./img/openedFolder.svg",
+        "open": false,
+        "subFolder": [{
+            "type": "folder",
+            "name": "Folder 21",
+            "id": "21",
+            "image": "./img/openedFolder.svg",
+            "open": false,
+            "subFolder": []
+        }, {
+            "type": "folder",
+            "name": "Folder 22",
+            "id": "22",
+            "image": "./img/openedFolder.svg",
+            "open": false,
+            "subFolder": []
+        }]
+    },
+    {
+        "type": "folder",
+        "name": "Folder 3",
+        "id": "3",
+        "image": "./img/openedFolder.svg",
+        "open": false,
+        "subFolder": [{
+            "type": "folder",
+            "name": "Folder 31",
+            "id": "31",
+            "image": "./img/openedFolder.svg",
+            "open": false,
+            "subFolder": []
+        }, {
+            "type": "folder",
+            "name": "Folder 32",
+            "id": "32",
+            "image": "./img/openedFolder.svg",
+            "open": false,
+            "subFolder": [{
+                "type": "folder",
+                "name": "Folder 321",
+                "id": "321",
+                "image": "./img/openedFolder.svg",
+                "open": false,
+                "subFolder": [{
+                    "type": "folder",
+                    "name": "Folder 3211",
+                    "id": "3211",
+                    "image": "./img/openedFolder.svg",
+                    "open": false,
+                    "subFolder": []
+                }, {
+                    "type": "folder",
+                    "name": "Folder 3212",
+                    "id": "3212",
+                    "image": "./img/openedFolder.svg",
+                    "open": false,
+                    "subFolder": []
+                }]
+            }]
+        }]
+    },
+    {
+        "type": "folder",
+        "name": "Folder 4",
+        "id": "4",
+        "image": "./img/openedFolder.svg",
+        "open": false,
+        "subFolder": [{
+            "type": "folder",
+            "name": "Folder 41",
+            "id": "41",
+            "image": "./img/openedFolder.svg",
+            "open": false,
+            "subFolder": []
+        }, {
+            "type": "folder",
+            "name": "Folder 42",
+            "id": "42",
+            "image": "./img/openedFolder.svg",
+            "open": false,
+            "subFolder": []
+        }]
+    },
+    {
+        "type": "folder",
+        "name": "Folder 5",
+        "id": "5",
+        "image": "./img/openedFolder.svg",
+        "open": false,
+        "subFolder": []
+    }
+]

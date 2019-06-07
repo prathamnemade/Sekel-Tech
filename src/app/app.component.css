@@ -36,3 +36,11 @@
     border-bottom: 1px solid darkgray;
     margin: 10px;
 }
+
+div.panel div.panel div.col-md-10:hover {
+    font-weight: 700;
+}
+
+div.panel div.col-md-10 {
+    max-width: fit-content;
+}

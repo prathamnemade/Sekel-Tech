@@ -40,7 +40,7 @@ export class CommonService {
           }
         }
       }
-      // console.warn(this.jsonData[i]);
+      // //console.warn(this.jsonData[i]);
       if (this.jsonData[i].subFolder.length > 0) {
         if (this.jsonData[i].id == id) {
           this.jsonData[i].open = !this.jsonData[i].open;
@@ -127,7 +127,37 @@ export class CommonService {
       if (count != letterManipulate.length) { getName(data[letterManipulate[count - 1] - 1].subFolder) }
     }
     getName(this.jsonData)
-    console.error('final name', name)
-    return name
+    //console.error('final name', name)
+    return name;
+  }
+  deleteFolder(id) {
+    //console.warn("deleteif", id);
+    var letterManipulate = id.split('id')[1].split('')
+    var count = 0;
+    var oldInstance;
+    var deleteName = (data) => {
+      count += 1;
+      for (let j = 0; j < data.length; j++) {
+        if (data[j].id == id) {
+          // //console.log(data[j], oldInstance)
+          oldInstance.forEach((element, index) => {
+            if (element == data[j]) {
+              oldInstance.splice(index, 1)
+            }
+          });
+          ; return
+        }
+      }
+      if (count != letterManipulate.length) { oldInstance = data[letterManipulate[count - 1] - 1].subFolder; deleteName(data[letterManipulate[count - 1] - 1].subFolder) }
+    }
+    if (id.length > 3) {
+      deleteName(this.jsonData)
+    } else {
+      (<any>this.jsonData).forEach((element, index) => {
+        if (element.id == id) {
+          (<any>this.jsonData).splice(index, 1)
+        }
+      });
+    }
   }
 }

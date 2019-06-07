@@ -11,7 +11,7 @@ export class SegregatePipe implements PipeTransform {
   constructor(private sanitizer: DomSanitizer) { }
   transform(value: any, type?: any): SafeHtml | SafeStyle | SafeScript | SafeUrl | SafeResourceUrl {
     this.count = 1;
-    // console.log(value)
+    // ////console.log(value)
     var data = this.formTheLogic(value)
     switch (type) {
       case 'html': return this.sanitizer.bypassSecurityTrustHtml(data);

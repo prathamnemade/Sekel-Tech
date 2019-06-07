@@ -9,3 +9,30 @@
 .panel:hover {
     cursor: pointer;
 }
+
+.createFolder {
+    width: 40px;
+    height: 40px;
+}
+
+.urlInput {
+    width: 80%;
+    border: 0;
+    font-size: 12px;
+    font-family: monospace;
+    margin: 10px;
+}
+
+.currentPath {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: end;
+    padding: 10px;
+}
+
+.folderEnter {
+    border: 0;
+    border-bottom: 1px solid darkgray;
+    margin: 10px;
+}

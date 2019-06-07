@@ -11,7 +11,7 @@ export class SegregatePipe implements PipeTransform {
   constructor(private sanitizer: DomSanitizer) { }
   transform(value: any, type?: any): SafeHtml | SafeStyle | SafeScript | SafeUrl | SafeResourceUrl {
     this.count = 1;
-    console.log(value)
+    // console.log(value)
     var data = this.formTheLogic(value)
     switch (type) {
       case 'html': return this.sanitizer.bypassSecurityTrustHtml(data);
@@ -27,24 +27,22 @@ export class SegregatePipe implements PipeTransform {
     for (var i = 0; i < value.length; i++) {
       var sub = (list) => {
         for (var j = 0; j < list.length; j++) {
-          this.divToRender += this.formHTML(list[j], this.count);
+          this.divToRender += this.formHTML(list[j]);
           if (list[j].subFolder.length > 0) {
-            this.count += 1;
-            if(value[j].open)sub(list[j].subFolder)
+            if (list[j].open) sub(list[j].subFolder)
           }
         }
       }
       if (value[i].subFolder.length > 0) {
-        this.divToRender += this.formHTML(value[i], this.count)
-        this.count += 1;
-        if(value[i].open)sub(value[i].subFolder)
+        this.divToRender += this.formHTML(value[i])
+        if (value[i].open) sub(value[i].subFolder)
       } else {
-        this.divToRender += this.formHTML(value[i], this.count)
+        this.divToRender += this.formHTML(value[i])
       }
     }
     return this.divToRender;
   }
-  formHTML(value, widthFold) {
-    return `<div id='${value.id}' class='row panel' style='margin-left:${50 * widthFold}px' ><div class='col-md-1'><img src='${value.image}'></div><div class='col-md-10'>${value.name}</div></div>`
+  formHTML(value) {
+    return `<div id='${value.id}' class='row panel' style='margin-left:${50 * (value.id.length - 3)}px' ><div class='col-md-1'><img src='${value.image}'></div><div class='col-md-10'>${value.name}</div></div>`
   }
 }

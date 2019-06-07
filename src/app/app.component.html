@@ -1,4 +1,21 @@
-<div style="margin:0;">
+<div id="typePanel">
+    <div class="row">
+        <div class="col-md-2 col-xs-5 col-sm-4 col-lg-2 currentPath">CURRENT PATH :</div>
+        <div class="col-md-10 col-xs-7 col-sm-8 col-lg-10"><input disabled [(ngModel)]="commonService.currentPath" class="urlInput"></div>
+    </div>
+    <div class="row" style="color: red;">
+        *To add a new folder , click on the desired folder in which you want to create a new one and then enter the name of the folder and wait for 2 sec ,automatically the folder will be created.
+        <br> *To rename the folder , double click on the folder and rename it .
+    </div>
+    <div class="row">
+        <!-- <button (click)="commonService.createFolder()" [disabled]="!commonService.folderName">CREATE FOLDER</button> -->
+        <img src='../assets/img/createFolder.svg' class='createFolder' alt='createFolder'>
+        <input (keyup)="createFolder()" [(ngModel)]="commonService.folderName" class="folderEnter" placeholder="Folder Name ..">
+        <p style="color: green;margin-top: 5px;"> {{folderCreate}}</p>
+    </div>
+</div>
+
+<div style="margin:0;" id="folderPanel">
     <div *ngFor="let item of commonService.jsonData" class="row panel">
         <div class="row panel" (click)="subPanel()" id="{{item.id}}" style="width:100%">
             <div class='col-md-1'>

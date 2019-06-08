@@ -133,7 +133,7 @@ export class CommonService {
     var getName = (data) => {
       count += 1;
       name += data[letterManipulate[count - 1] - 1].name + ' / ';
-      if (count == letterManipulate.length && data[letterManipulate[count - 1] - 1].subFolder.length == 0) {
+      if (count == letterManipulate.length && data[letterManipulate[count - 1] - 1].id.length>3 && data[letterManipulate[count - 1] - 1].subFolder.length == 0) {
         data[letterManipulate[count - 1] - 1].open = !data[letterManipulate[count - 1] - 1].open;
         data[letterManipulate[count - 1] - 1].image = data[letterManipulate[count - 1] - 1].open ? this.openedFolder : this.closedFolder;
       }

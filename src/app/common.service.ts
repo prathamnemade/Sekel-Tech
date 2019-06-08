@@ -159,5 +159,12 @@ export class CommonService {
         }
       });
     }
+    if ((<any>this.jsonData).length == 0) {
+      this.setInitial()
+    }
+  }
+  setInitial() {
+    this.currentOngoingId = 'id0'
+    this.currentPath = '../'
   }
 }

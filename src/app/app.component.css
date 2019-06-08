@@ -41,6 +41,10 @@ div.panel div.panel div.col-md-10:hover {
     font-weight: 700;
 }
 
+input.folderEnter:focus {
+    outline: none !important;
+}
+
 div.panel div.col-md-10 {
     max-width: fit-content;
 }

@@ -16,6 +16,11 @@
 </div>
 
 <div style="margin:0;" id="folderPanel">
+    <div class="row">
+        <a href='#' (click)="commonService.setInitial()">
+            <h4> . . / </h4>
+        </a>
+    </div>
     <div *ngFor="let item of commonService.jsonData" class="row panel">
         <div class="row panel" (click)="subPanel()" id="{{item.id}}" style="width:100%">
             <div class='col-md-1'>

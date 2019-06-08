@@ -27,15 +27,17 @@ export class AppComponent {
     }
   }
   createFolder() {
-    clearTimeout(this.entry)
-    this.entry = setTimeout(() => {
-      this.commonService.createFolder()
-      this.folderCreate = 'Folder Created Successfully!!';
-      setTimeout(() => {
-        this.folderCreate = '';
-        this.commonService.folderName = '';
+    if (this.commonService.folderName != "") {
+      clearTimeout(this.entry)
+      this.entry = setTimeout(() => {
+        this.commonService.createFolder()
+        this.folderCreate = 'Folder Created Successfully!!';
+        setTimeout(() => {
+          this.folderCreate = '';
+          this.commonService.folderName = '';
+        }, 2000);
       }, 2000);
-    }, 2000);
+    }
   }
   count = 0;
   startDate: any;

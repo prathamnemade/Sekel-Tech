@@ -1,12 +1,12 @@
 [{
         "type": "folder",
-        "name": "Folder 1",
+        "name": "Folder A",
         "id": "id1",
         "image": "../assets/img/closedFolder.svg",
         "open": false,
         "subFolder": [{
                 "type": "folder",
-                "name": "Folder 11",
+                "name": "Folder B",
                 "id": "id11",
                 "image": "../assets/img/closedFolder.svg",
                 "open": false,
@@ -14,20 +14,20 @@
             },
             {
                 "type": "folder",
-                "name": "Folder 12",
+                "name": "Folder C",
                 "id": "id12",
                 "image": "../assets/img/closedFolder.svg",
                 "open": false,
                 "subFolder": [{
                     "type": "folder",
-                    "name": "Folder 121",
+                    "name": "Folder D",
                     "id": "id121",
                     "image": "../assets/img/closedFolder.svg",
                     "open": false,
                     "subFolder": []
                 }, {
                     "type": "folder",
-                    "name": "Folder 122",
+                    "name": "Folder S",
                     "id": "id122",
                     "image": "../assets/img/closedFolder.svg",
                     "open": false,
@@ -38,20 +38,20 @@
     },
     {
         "type": "folder",
-        "name": "Folder 2",
+        "name": "Folder K",
         "id": "id2",
         "image": "../assets/img/closedFolder.svg",
         "open": false,
         "subFolder": [{
             "type": "folder",
-            "name": "Folder 21",
+            "name": "Folder L",
             "id": "id21",
             "image": "../assets/img/closedFolder.svg",
             "open": false,
             "subFolder": []
         }, {
             "type": "folder",
-            "name": "Folder 22",
+            "name": "Folder V",
             "id": "id22",
             "image": "../assets/img/closedFolder.svg",
             "open": false,
@@ -60,39 +60,39 @@
     },
     {
         "type": "folder",
-        "name": "Folder 3",
+        "name": "Folder C",
         "id": "id3",
         "image": "../assets/img/closedFolder.svg",
         "open": false,
         "subFolder": [{
             "type": "folder",
-            "name": "Folder 31",
+            "name": "Folder P",
             "id": "id31",
             "image": "../assets/img/closedFolder.svg",
             "open": false,
             "subFolder": []
         }, {
             "type": "folder",
-            "name": "Folder 32",
+            "name": "Folder Q",
             "id": "id32",
             "image": "../assets/img/closedFolder.svg",
             "open": false,
             "subFolder": [{
                 "type": "folder",
-                "name": "Folder 321",
+                "name": "Folder W",
                 "id": "id321",
                 "image": "../assets/img/closedFolder.svg",
                 "open": false,
                 "subFolder": [{
                     "type": "folder",
-                    "name": "Folder 3211",
+                    "name": "Folder M",
                     "id": "id3211",
                     "image": "../assets/img/closedFolder.svg",
                     "open": false,
                     "subFolder": []
                 }, {
                     "type": "folder",
-                    "name": "Folder 3212",
+                    "name": "Folder L",
                     "id": "id3212",
                     "image": "../assets/img/closedFolder.svg",
                     "open": false,
@@ -103,20 +103,20 @@
     },
     {
         "type": "folder",
-        "name": "Folder 4",
+        "name": "Folder C",
         "id": "id4",
         "image": "../assets/img/closedFolder.svg",
         "open": false,
         "subFolder": [{
             "type": "folder",
-            "name": "Folder 41",
+            "name": "Folder C",
             "id": "id41",
             "image": "../assets/img/closedFolder.svg",
             "open": false,
             "subFolder": []
         }, {
             "type": "folder",
-            "name": "Folder 42",
+            "name": "Folder D",
             "id": "id42",
             "image": "../assets/img/closedFolder.svg",
             "open": false,
@@ -125,7 +125,7 @@
     },
     {
         "type": "folder",
-        "name": "Folder 5",
+        "name": "Folder FF",
         "id": "id5",
         "image": "../assets/img/closedFolder.svg",
         "open": false,
@@ -133,7 +133,7 @@
     },
     {
         "type": "folder",
-        "name": "Folder 6",
+        "name": "Folder MM",
         "id": "id6",
         "image": "../assets/img/closedFolder.svg",
         "open": false,

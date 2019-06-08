@@ -13,6 +13,7 @@ export class CommonService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
   jsonData = {}
+  loader = false;
   currentOngoingId = "id0";
   folderName = "";
   closedFolder = "../assets/img/closedFolder.svg";
@@ -25,6 +26,7 @@ export class CommonService {
       })
   }
   openClosePanel(id) {
+    this.loader = true;
     this.currentPath = this.getPath(id);
     this.currentOngoingId = id;
     for (var i = 0; i < (<any>this.jsonData).length; i++) {
@@ -56,8 +58,12 @@ export class CommonService {
         }
       }
     }
+    setTimeout(() => {
+      this.loader = false;
+    }, 300);
   }
   createFolder() {
+    this.loader = true;
     var letterManipulate = this.currentOngoingId.split('id')[1].split('')
     var dummy;
     var count = 0;
@@ -94,6 +100,9 @@ export class CommonService {
         }
       })
     }
+    setTimeout(() => {
+      this.loader = false;
+    }, 300);
   }
   setId() {
     if (this.currentOngoingId == 'id0') {

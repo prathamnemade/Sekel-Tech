@@ -171,6 +171,9 @@ export class CommonService {
     if ((<any>this.jsonData).length == 0) {
       this.setInitial()
     }
+    setTimeout(() => {
+      this.loader = false;
+    }, 500);
   }
   setInitial() {
     this.currentOngoingId = 'id0'
